@@ -1,0 +1,57 @@
+---
+title : "Fungsi dengan R"
+output: html_notebook
+---
+exercise 4
+no.1
+```{r}
+f <- function(x){
+  result <- sin(x)
+  return(result)
+}
+input <- seq(5,20,0.1)
+plot(input,
+     sapply(input, f), type = "l" , xlab = "x", ylab = "f(x)")
+```
+
+#no.2
+```{r}
+f <- function(x){
+  result <- log(x)
+  return(result)
+}
+input <- 1:50
+plot(input,
+     sapply(input, f), type = "l" , xlab = "x", ylab = "f(x)")
+```
+#no.3
+```{r}
+f <- function(x){
+  result <- sqrt(x)-2
+  return(result)
+}
+input <- 4:8
+plot(input,
+     sapply(input, f), type = "p" , xlab = "x", ylab = "f(x)")
+```
+#no.4
+```{r}
+f <- function(x){
+  result <- sqrt(x-2)
+  return(result)
+}
+input <- 3:7
+plot(input,
+     sapply(input, f), type = "p" , xlab = "x", ylab = "f(x)")
+```
+#no.5
+```{r}
+f <- function(x){
+  result <- sqrt(2-x)
+  return(result)
+}
+input <- 0:-20
+plot(input,
+     sapply(input, f), type = "l" , xlab = "x", ylab = "f(x)")
+```
+
